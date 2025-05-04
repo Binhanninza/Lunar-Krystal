@@ -53,7 +53,7 @@ exports.run = async function(o) {
             case 'key': {
                 if (o.event.senderID != global.config.ADMINBOT[0]) return send("Bạn không phải Admin để thực hiện lệnh này.");
                 if (o.args.length < 3) {
-                    return send(`❎ Dùng: ${prefix}${this.config.name} key [số ngày thuê] [số key muốn tạo] : tạo key ngẫu nhiên với số ngày thuê bot.`);
+                    return send(`❎ Dùng: ${prefix}${this.config.name} key [số ngày thuê] [số key want tạo] : tạo key ngẫu nhiên với số ngày thuê bot.`);
                 }
                 let rentalDays = parseInt(o.args[1]);
                 let numKeys = parseInt(o.args[2]) || 1;
